@@ -18,9 +18,9 @@ def clean_remittance_data(file_path):
     return df
 
 if __name__ == "__main__":
-    file_path = "/home/ubuntu/upload/API_BX.TRF.PWKR.CD.DT_DS2_en_csv_v2_38454.csv"
+    file_path = "API_BX.TRF.PWKR.CD.DT_DS2_en_csv_v2_38454.csv"
     cleaned_df = clean_remittance_data(file_path)
-    cleaned_df.to_csv("/home/ubuntu/yemen_remittances_cleaned.csv", index=False)
+    cleaned_df.to_csv("yemen_remittances_cleaned.csv", index=False)
     print("Data cleaned and saved to yemen_remittances_cleaned.csv")
 
 
