@@ -18,9 +18,9 @@ def analyze_remittance_data(file_path):
     return df
 
 if __name__ == "__main__":
-    file_path = "/home/ubuntu/yemen_remittances_cleaned.csv"
+    file_path = "yemen_remittances_cleaned.csv"
     analyzed_df = analyze_remittance_data(file_path)
-    analyzed_df.to_csv("/home/ubuntu/yemen_remittances_analyzed.csv", index=False)
+    analyzed_df.to_csv("yemen_remittances_analyzed.csv", index=False)
     print("Analysis results saved to yemen_remittances_analyzed.csv")
 
 
