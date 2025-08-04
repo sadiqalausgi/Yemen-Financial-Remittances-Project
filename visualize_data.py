@@ -19,7 +19,7 @@ def visualize_remittance_data(file_path):
     plt.grid(True)
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.savefig("/home/ubuntu/yemen_remittances_time_series.png")
+    plt.savefig("yemen_remittances_time_series.png")
     plt.close()
 
     # Plot 2: Year-over-year change
@@ -31,11 +31,11 @@ def visualize_remittance_data(file_path):
     plt.grid(True)
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.savefig("/home/ubuntu/yemen_remittances_yoy_change.png")
+    plt.savefig("yemen_remittances_yoy_change.png")
     plt.close()
 
 if __name__ == "__main__":
-    file_path = "/home/ubuntu/yemen_remittances_analyzed.csv"
+    file_path = "yemen_remittances_analyzed.csv"
     visualize_remittance_data(file_path)
     print("Visualizations generated and saved.")
 
