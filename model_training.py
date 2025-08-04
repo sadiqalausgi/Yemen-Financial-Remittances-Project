@@ -44,9 +44,9 @@ def train_predictive_model(file_path):
     return model, mse, r2, future_df
 
 if __name__ == "__main__":
-    file_path = "/home/ubuntu/yemen_remittances_cleaned.csv"
+    file_path = "yemen_remittances_cleaned.csv"
     model, mse, r2, future_predictions_df = train_predictive_model(file_path)
-    future_predictions_df.to_csv("/home/ubuntu/yemen_remittances_predictions.csv", index=False)
+    future_predictions_df.to_csv("yemen_remittances_predictions.csv", index=False)
     print("Model trained and future predictions saved to yemen_remittances_predictions.csv")
 
 
